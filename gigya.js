@@ -6,7 +6,7 @@ function ShowLoginScreen(lang)
             startScreen: 'gigya-login-screen',
             //customLang: customLangParams,
             containerID: 'LoginScreen',
-            lang: lang
+            lang: 'es'
             
         });
 
