@@ -1,17 +1,31 @@
 <!DOCTYPE html>
 <html>
   <head>
-   
+   <script src="https://cdns.gigya.com/js/gigya.js?apiKey=4_N5VPDf3V4P1qTxL2V5ssDA></script>
     <script src="gigya.js"></script>
   </head>
-  <body onload="ShowLoginScreen('es');">
-    <script src="https://cdns.gigya.com/js/gigya.js?apiKey=4_N5VPDf3V4P1qTxL2V5ssDA&lang=es"></script>
+  <body>
+    
       <div id="LoginScreen"></div>
       <label for="cars">Select Country:</label>
-  <select name="country" id="country">
+  <select name="country" id="country" onchange="country()">
     <option value="china">china</option>
     <option value="spanish">spanish</option>
    
   </select> 
+    <script>
+      function country()
+        {
+          var x = document.getElementById("country").value;
+          if(x=="china")
+          {
+          ShowLoginScreen('zh-cn');
+          }
+          if(x=="spanish")
+          {
+             ShowLoginScreen('de');
+          }
+        }
+    </script>
   </body>
 </html>
