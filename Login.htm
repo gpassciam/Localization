@@ -9,8 +9,9 @@
       <div id="LoginScreen"></div>
       <label for="cars">Select Country:</label>
   <select name="country" id="country" onchange="country()">
-    <option value="china">china</option>
-    <option value="spanish">spanish</option>
+    <option value="English">china</option>
+    <option value="China">china</option>
+    <option value="Spanish">spanish</option>
    
   </select> 
     <script>
@@ -18,6 +19,10 @@
         {
           var x = document.getElementById("country").value;
           alert(x);
+           if(x=="English")
+          {
+          ShowLoginScreen('en');
+          }
           if(x=="china")
           {
           ShowLoginScreen('zh-cn');
